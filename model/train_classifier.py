@@ -30,7 +30,7 @@ def load_data(database_filepath):
     return X, y, category_names
 
 def tokenize(text):
-    '''Tokenize text by words and lemmatize the tokens, then return clean tokens''''
+    '''Tokenize text by words and lemmatize the tokens, then return clean tokens'''
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
     
