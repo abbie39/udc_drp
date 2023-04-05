@@ -3,7 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
-    '''Loads messages and categories dataframes and merges on the common columns of 'id''''
+    '''Loads messages and categories dataframes and merges on the common columns of id'''
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
     df = pd.merge(messages, categories, on='id')
